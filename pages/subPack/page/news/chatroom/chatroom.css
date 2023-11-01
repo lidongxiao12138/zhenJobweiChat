@@ -1,0 +1,8 @@
+page {
+	background-color: #FAFAFA;
+	height: auto;
+}
+.chat_main {
+	position: relative;
+	top: 100px;
+}

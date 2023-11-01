@@ -1,0 +1,332 @@
+{
+	"easycom": {
+		"autoscan": true, //是否开启自动扫描，开启后将会自动扫描符合components/组件名称/组件名称.vue目录结构的组件
+		"custom": {
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue",
+			"^uv-(.*)": "@/uni_modules/uview-ui/components/u-$1-$1/u-$1-$1.vue",
+			"^u--(.*)": "@/uni_modules/uview-ui/components/u--$1/u--$1.vue",
+			"^uni_(.*)": "@/uni_modules/uni-file-picker/components/uni-$1-$1/uni-$1-$1.vue"
+		}
+	},
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false, //禁止下拉刷新
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"onReachBottomDistance": 150
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom", // 取消本页面的导航栏
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "通知",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pages/subPack/page/",
+		"pages": [{
+				"path": "home/location/location",
+				"style": {
+					"navigationBarTitleText": "地点",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "home/homescreen/homescreen",
+				"style": {
+					"navigationBarTitleText": "筛选",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "home/homelistdetail/homelistdetail",
+				"style": {
+					"navigationBarTitleText": "职位详情",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "home/employerDeatil/employerDeatil",
+				"style": {
+					"navigationBarTitleText": "招聘人",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#f7f7f7",
+					"onReachBottomDistance": 100
+				}
+			},
+			{
+				"path": "home/companyDetail/companyDetail",
+				"style": {
+					"navigationBarTitleText": "公司详情",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "home/employerDeatil/employerTable/employerTable",
+				"style": {
+					"navigationBarTitleText": "职位",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "home/search/search",
+				"style": {
+					"navigationBarTitleText": "搜索",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/advantagePage/advantagePage",
+				"style": {
+					"navigationBarTitleText": "个人优势",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/myResume/myResume",
+				"style": {
+					"navigationBarTitleText": "我的简历",
+					"enablePullDownRefresh": false, //禁止下拉刷新
+					"navigationStyle": "custom",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "me/basicPerson/basicPerson",
+				"style": {
+					"navigationBarTitleText": "基础信息",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/jobIntentionPage/jobIntentionPage",
+				"style": {
+					"navigationBarTitleText": "求职意向",
+					"enablePullDownRefresh": false,
+					"backgroundColor": "#f4f7fc"
+				}
+			},
+			{
+				"path": "me/workExperiencePage/workExperiencePage",
+				"style": {
+					"navigationBarTitleText": "工作经验",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/workSkillPage/workSkillPage",
+				"style": {
+					"navigationBarTitleText": "专业技能",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/educationPage/educationPage",
+				"style": {
+					"navigationBarTitleText": "教育经历",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/workSkillPage/IndividualWorkPage/IndividualWorkPage",
+				"style": {
+					"navigationBarTitleText": "个人作品",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/jobIntentionPage/jobIntertionList/jobIntertionList",
+				"style": {
+					"navigationBarTitleText": "求职意向",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/attachedResume/attachedResume",
+				"style": {
+					"navigationBarTitleText": "附件简历",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/attachedResume/uploadAttached/uploadAttached",
+				"style": {
+					"navigationBarTitleText": "上传附件简历",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/award/award",
+				"style": {
+					"navigationBarTitleText": "推荐有奖",
+					"enablePullDownRefresh": false,
+					"navigationBarTextStyle": "white",
+					"navigationBarBackgroundColor": "#459EFF"
+				}
+			},
+			{
+				"path": "me/referrer/referrer",
+				"style": {
+					"navigationBarTitleText": "我的推荐",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/referrer/referrerDetail/referrerDetail",
+				"style": {
+					"navigationBarTitleText": "推荐详情",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "news/chatroom/chatroom",
+				"style": {
+					"navigationBarTitleText": "chatting",
+					"backgroundTextStyle": "dark",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "me/collectData/collectPhoneNum/collectPhoneNum",
+				"style": {
+					"navigationBarTitleText": "手机号验证",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/collectData/collectOnePage/collectOnePage",
+				"style": {
+					"navigationBarTitleText": "填写资料",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/collectData/collectTwoPage/collectTwoPage",
+				"style": {
+					"navigationBarTitleText": "填写资料",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/collectData/collectThreePage/collectThreePage",
+				"style": {
+					"navigationBarTitleText": "填写资料",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "me/collectData/submitSuceedPage/submitSuceedPage",
+				"style": {
+					"navigationBarTitleText": "提交成功",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "notice/noticList/noticList",
+				"style": {
+					"navigationBarTitleText": "面试通知",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "notice/repNotice/repNotice",
+				"style": {
+					"navigationBarTitleText": "报到通知",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "notice/intNotice/intNotice",
+				"style": {
+					"navigationBarTitleText": "面试通知",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "webView/webView",
+				"style": {
+					"navigationBarTitleText": "webView",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "favoritePage/favoritePage",
+				"style": {
+					"navigationBarTitleText": "收藏职位",
+					"enablePullDownRefresh": false
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationStyle": "default",
+		"backgroundColor": "#f4f7fc",
+		"backgroundTextStyle": "light",
+		"enablePullDownRefresh": true,
+		"renderingMode": "seperated", // 仅微信小程序，webrtc 无法正常时尝试强制关闭同层渲染
+		"pageOrientation": "portrait" //横屏配置，全局屏幕旋转设置(仅 APP/微信/QQ小程序)，支持 auto / portrait / landscape
+	},
+	"uniIdRouter": {},
+	"lazyCodeLoading": "requiredComponents",
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#057CFF",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/icons/option.png",
+				"selectedIconPath": "static/icons/option_select.png"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"text": "消息",
+				"iconPath": "static/icons/message.png",
+				"selectedIconPath": "static/icons/message_select.png"
+			},
+			{
+				"pagePath": "pages/notice/notice",
+				"text": "通知",
+				"iconPath": "static/icons/notic.png",
+				"selectedIconPath": "static/icons/notic_select.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "static/icons/people.png",
+				"selectedIconPath": "static/icons/people_select.png"
+			}
+		]
+	},
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
