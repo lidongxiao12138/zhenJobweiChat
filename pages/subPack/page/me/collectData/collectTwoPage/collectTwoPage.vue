@@ -153,7 +153,6 @@
 				const dataCode = await this.getImageUrl(event)
 				this.data.educationUrl = dataCode
 			},
-
 			//识别简历在线验证码
 			getOCRImageCode(lists) {
 				pathToBase64(lists[0].url).then(async base64 => {
